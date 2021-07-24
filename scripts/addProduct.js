@@ -1,46 +1,64 @@
 /* ---------- DATABASE ---------- */
-
-var degionDesktop = {
+const degionDesktop = {
 	id: 1,
 	name: "Degion Desktop",
 	price: 2000,
 };
 
-var degionAllInOne = {
+const degionAllInOne = {
 	id: 2,
 	name: "Degion All In One",
 	price: 2500,
 };
 
-var degionNotebook = {
+const degionNotebook = {
 	id: 3,
 	name: "Degion Notebook",
 	price: 3000,
 };
 
-var degionGamer = {
+const degionGamer = {
 	id: 4,
 	name: "Degion Gamer",
 	price: 3500,
 };
 
-// PEGA O ID
-// SWITCH COM IDS
-// ARMAZENA O OBJETO NO LOCAL STORAGE
+/* ---------- FUNCIONALIDADES ---------- */
 
-/*
-const inputEmail = document.getElementById("email");
-const btn = document.getElementById("btn");
+// Cria um array para armazenamento dos produtos
+const items = (() => {
+	const fieldValue = localStorage.getItem("cart");
+	return fieldValue === null ? [] : JSON.parse(fieldValue);
+})();
 
-btn.addEventListener("click", () => {
-	const key = "email";
-	const value = inputEmail.value;
-
-	if (key && value) {
-		localStorage.setItem(key, value);
-		alert("E-mail cadastrado com sucesso!");
-	} else {
-		alert("Campo e-mail é obrigatório!");
-	}
+// Armazena o produto Degion Desktop no array
+const btnDesktop = document.getElementById("btn-desktop");
+btnDesktop.addEventListener("click", () => {
+	items.push(degionDesktop);
+	localStorage.setItem("cart", JSON.stringify(items));
+	alert("Degion Desktop adicionado ao carrinho!");
 });
-*/
+
+// Armazena o produto Degion All In One no array
+const btnAllInOne = document.getElementById("btn-allinone");
+btnAllInOne.addEventListener("click", () => {
+	items.push(degionAllInOne);
+	localStorage.setItem("cart", JSON.stringify(items));
+	alert("Degion All In One adicionado ao carrinho!");
+});
+
+// Armazena o produto Degion Notebook no array
+const btnNotebook = document.getElementById("btn-notebook");
+btnNotebook.addEventListener("click", () => {
+	items.push(degionNotebook);
+	localStorage.setItem("cart", JSON.stringify(items));
+	alert("Degion Notebook adicionado ao carrinho!");
+});
+
+// Armazena o produto Degion Gamer no array
+const btnGamer = document.getElementById("btn-gamer");
+btnGamer.addEventListener("click", () => {
+	items.push(degionGamer);
+	localStorage.setItem("cart", JSON.stringify(items));
+	alert("Degion Gamer adicionado ao carrinho!");
+});
