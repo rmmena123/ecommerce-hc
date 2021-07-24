@@ -40,7 +40,7 @@
 						convallis tristique urna non tristique. In volutpat metus vel ex
 						tempor dapibus.
 					</p>
-					<button>Ver Produtos</button>
+					<button><a href="#products">Ver Produtos</a></button>
 				</div>
 
 				<div id="img-banner">
@@ -124,13 +124,75 @@
 			</footer>
 		</main>
 
-		<div id="simpleModal_7" class="modal">
+		<section id="simpleModal_7" class="modal">
 			<div class="modal-window">
 				<h3>Preencha os dados e crie sua conta</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<button id="btn-modal" data-dismiss="modal">Fechar</button>
+				<form action="">
+					<label for="name">Nome Completo</label>
+					<input
+						type="text"
+						name="name"
+						placeholder="Digite seu nome completo"
+						required
+					/>
+
+					<label for="cpf">CPF</label>
+					<input
+						type="text"
+						name="cpf"
+						pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+						\
+						title="Digite um CPF no formato: xxx.xxx.xxx-xx"
+						placeholder="Digite seu CPF no formato: xxx.xxx.xxx-xx"
+						required
+					/>
+
+					<label for="date-birth">Data de nascimento</label>
+					<input type="date" name="date-birth" required />
+
+					<label for="email">E-mail</label>
+					<input
+						type="email"
+						name="email"
+						placeholder="Digite seu e-mail"
+						required
+					/>
+
+					<label for="cep">CEP</label>
+					<input
+						type="text"
+						name="cep"
+						pattern="\d{5}\-\d{3}"
+						\
+						title="Digite um CEP no formato: xxxxx-xxx"
+						placeholder="Digite seu CEP no formato: xxxxx-xxx"
+						required
+					/>
+
+					<label for="address">Endereço Completo</label>
+					<input
+						type="text"
+						name="address"
+						placeholder="Insira seu endereço completo, incluindo complementos"
+						title="Insira seu endereço completo, incluindo complementos"
+						required
+					/>
+
+					<label for="password">Insira uma senha</label>
+					<input
+						type="password"
+						name="password"
+						placeholder="Digite uma senha"
+						required
+					/>
+				</form>
+
+				<div id="buttons-modal">
+					<button class="btn-modal">Cadastrar</button>
+					<button class="btn-modal" data-dismiss="modal">Fechar</button>
+				</div>
 			</div>
-		</div>
+		</section>
 
 		<script src="/scripts/storeEmail.js"></script>
 		<script src="/scripts/addProduct.js"></script>
