@@ -4,6 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="/styles/reset.css" />
+		<link rel="stylesheet" href="/styles/index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Degion Computadores</title>
 	</head>
 	<body>
@@ -13,9 +22,9 @@
 			</div>
 
 			<nav>
-				<li>Home</li>
-				<li>Produtos</li>
-				<li>Contato</li>
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#products">Produtos</a></li>
+				<li><a href="#contact">Contato</a></li>
 			</nav>
 		</header>
 
@@ -90,20 +99,17 @@
 				</div>
 			</section>
 
-			<footer>
+			<footer id="contact">
 				<div id="newsletter">
 					<h1>Assine nossa newsletter e fique sabendo das nossas promoções</h1>
-
-					<div>
-						<input type="email" placeholder="Insira seu e-mail" />
-						<button>Enviar</button>
-					</div>
+					<input type="email" id="email" placeholder="Insira seu e-mail" />
+					<button id="btn">Enviar</button>
 				</div>
 
-				<div>
+				<div id="author">
 					<h2>Feito por Rodrigo Mena</h2>
 
-					<div>
+					<div id="social-media">
 						<a href="https://github.com/rmmena123" target="_blank"
 							><img src="/img/github.svg" alt="Github"
 						/></a>
@@ -114,5 +120,7 @@
 				</div>
 			</footer>
 		</main>
+
+		<script src="/scripts/storeEmail.js"></script>
 	</body>
 </html>

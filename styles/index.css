@@ -1,0 +1,371 @@
+/* ---------------------- HEADER ---------------------- */
+
+header {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 2px solid var(--font-color);
+}
+
+#logo img {
+	width: 5rem;
+}
+
+nav li {
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	text-align: center;
+	font-weight: 500;
+}
+
+nav li a {
+	text-align: center;
+	transition: 0.4s;
+	cursor: pointer;
+	color: var(--font-color);
+}
+
+nav li a:hover {
+	color: var(--bg-card-color);
+}
+
+nav li:last-child {
+	margin-bottom: 0.5rem;
+}
+
+/* ---------------------- BANNER ---------------------- */
+
+#banner {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#banner #text-banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+
+#banner #text-banner h1 {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+#banner #text-banner p {
+	text-align: center;
+	font-size: 0.8rem;
+	padding: 1rem;
+}
+
+#banner #text-banner button {
+	width: 75%;
+	height: 2.8rem;
+	border-radius: 0.3rem;
+	font-weight: 600;
+	font-size: 1rem;
+	margin-top: 0.5rem;
+	background-color: var(--font-color);
+	color: var(--bg-color);
+	transition: 0.4s;
+	cursor: pointer;
+}
+
+#banner #text-banner button:hover {
+	background-color: var(--hover-color);
+	color: var(--font-color);
+}
+
+#banner #img-banner {
+	display: none;
+}
+
+/* ---------------------- PRODUCTS ---------------------- */
+
+#products {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4rem;
+}
+
+#products .product-card {
+	width: 75%;
+	height: 24rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--bg-card-color);
+	border-radius: 0.4rem;
+	margin-bottom: 2rem;
+	box-shadow: 10px 10px 15px 0px rgba(50, 44, 77, 0.5);
+}
+
+#products .product-card img {
+	width: 80%;
+	height: 7rem;
+}
+
+#products .product-card h2 {
+	font-size: 1.3rem;
+	text-align: center;
+	margin-top: 0.6rem;
+}
+
+#products .product-card ul li {
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+#products .product-card ul li:first-child {
+	margin-top: 0.6rem;
+}
+
+#products .product-card h3 {
+	margin-top: 0.6rem;
+	font-size: 1.2rem;
+}
+
+#products .product-card button {
+	margin-top: 0.6rem;
+	border-radius: 0.4rem;
+	width: 75%;
+	height: 2.5rem;
+	background-color: var(--font-color);
+	transition: 0.4s;
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--bg-card-color);
+	cursor: pointer;
+}
+
+#products .product-card button:hover {
+	background-color: var(--hover-color);
+	color: var(--font-color);
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4rem;
+}
+
+footer #newsletter {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer #newsletter h1 {
+	text-align: center;
+}
+
+footer #newsletter input {
+	width: 75%;
+	height: 2.5rem;
+	margin-top: 0.5rem;
+	outline: none;
+	background-color: var(--font-color);
+	font-size: 0.8rem;
+	padding: 0.1rem;
+	border-radius: 0.4rem;
+}
+
+input::placeholder {
+	color: var(--bg-card-color);
+	padding-left: 1rem;
+}
+
+footer #newsletter button {
+	width: 65%;
+	height: 2.5rem;
+	margin-top: 1rem;
+	border-radius: 0.4rem;
+	background-color: var(--font-color);
+	transition: 0.4s;
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--bg-card-color);
+	cursor: pointer;
+}
+
+footer #newsletter button:hover {
+	background-color: var(--hover-color);
+	color: var(--font-color);
+}
+
+footer #author {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+footer #author h2 {
+	text-align: center;
+}
+
+footer #author #social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ---------------------- MEDIA QUERIES ---------------------- */
+@media (min-width: 700px) {
+	/* ------ HEADER ------ */
+	header {
+		flex-direction: row;
+		justify-content: space-around;
+		border: none;
+	}
+
+	#logo img {
+		width: 6rem;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	nav li {
+		margin-right: 2rem;
+		margin-top: 0;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+
+	nav li:last-child {
+		margin-bottom: 0;
+		margin-right: 0;
+	}
+
+	/* ------ BANNER ------ */
+	#banner {
+		justify-content: space-around;
+	}
+
+	#banner #text-banner {
+		width: 40%;
+		margin-top: 0;
+	}
+
+	#banner #text-banner p {
+		text-align: left;
+		font-size: 1rem;
+	}
+
+	#banner #text-banner button {
+		height: 3rem;
+		border-radius: 0.4rem;
+	}
+
+	#banner #img-banner {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 50%;
+	}
+
+	#banner #img-banner img {
+		height: 20rem;
+	}
+
+	/* ------ PRODUCTS ------ */
+	#products {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	#products .product-card {
+		width: 40%;
+	}
+
+	/* ------ FOOTER ------ */
+
+	footer #newsletter input {
+		max-width: 40rem;
+	}
+
+	footer #newsletter button {
+		max-width: 30rem;
+	}
+
+	footer #author {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+@media (min-width: 1280px) {
+	/* ------ HEADER ------ */
+	header {
+		justify-content: space-between;
+		margin-left: 4rem;
+		margin-right: 4rem;
+	}
+
+	/* ------ BANNER ------ */
+	#banner {
+		justify-content: center;
+	}
+
+	#banner #text-banner h1 {
+		font-size: 2rem;
+	}
+
+	#banner #img-banner {
+		display: block;
+		width: auto;
+	}
+
+	#banner #img-banner img {
+		height: 25rem;
+	}
+
+	/* ------ PRODUCTS ------ */
+	#products {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-left: 4rem;
+		margin-right: 4rem;
+	}
+
+	#products .product-card {
+		width: 22%;
+	}
+
+	/* ------ FOOTER ------ */
+
+	footer {
+		margin-left: 4rem;
+		margin-right: 4rem;
+	}
+
+	footer #newsletter button {
+		max-width: 20rem;
+	}
+
+	footer #author {
+		justify-content: space-between;
+	}
+}
