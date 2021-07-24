@@ -63,19 +63,6 @@ nav li:last-child {
 	padding: 1rem;
 }
 
-#banner #text-banner button {
-	width: 75%;
-	height: 2.8rem;
-	border-radius: 0.3rem;
-	font-weight: 600;
-	font-size: 1rem;
-	margin-top: 0.5rem;
-	background-color: var(--font-color);
-	color: var(--bg-color);
-	transition: 0.4s;
-	cursor: pointer;
-}
-
 #banner #text-banner button a {
 	color: var(--bg-color);
 }
@@ -386,11 +373,6 @@ footer #author #social-media {
 	#banner #text-banner p {
 		text-align: left;
 		font-size: 1rem;
-	}
-
-	#banner #text-banner button {
-		height: 3rem;
-		border-radius: 0.4rem;
 	}
 
 	#banner #img-banner {
