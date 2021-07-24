@@ -131,11 +131,12 @@
 		<section id="simpleModal_7" class="modal">
 			<div class="modal-window">
 				<h3>Preencha os dados e crie sua conta</h3>
-				<form action="">
+				<form>
 					<label for="name">Nome Completo</label>
 					<input
 						type="text"
 						name="name"
+						id="name-input"
 						placeholder="Digite seu nome completo"
 						required
 					/>
@@ -144,6 +145,7 @@
 					<input
 						type="text"
 						name="cpf"
+						id="cpf-input"
 						pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
 						\
 						title="Digite um CPF no formato: xxx.xxx.xxx-xx"
@@ -152,12 +154,13 @@
 					/>
 
 					<label for="date-birth">Data de nascimento</label>
-					<input type="date" name="date-birth" required />
+					<input type="date" name="date-birth" id="datebirth-input" required />
 
 					<label for="email">E-mail</label>
 					<input
 						type="email"
 						name="email"
+						id="email-input"
 						placeholder="Digite seu e-mail"
 						required
 					/>
@@ -166,6 +169,7 @@
 					<input
 						type="text"
 						name="cep"
+						id="cep-input"
 						pattern="\d{5}\-\d{3}"
 						\
 						title="Digite um CEP no formato: xxxxx-xxx"
@@ -177,6 +181,7 @@
 					<input
 						type="text"
 						name="address"
+						id="adrress-input"
 						placeholder="Insira seu endereço completo, incluindo complementos"
 						title="Insira seu endereço completo, incluindo complementos"
 						required
@@ -186,13 +191,14 @@
 					<input
 						type="password"
 						name="password"
+						id="password-input"
 						placeholder="Digite uma senha"
 						required
 					/>
 				</form>
 
 				<div id="buttons-modal">
-					<button class="btn-modal">Cadastrar</button>
+					<button class="btn-modal" id="btn-submit">Cadastrar</button>
 					<button class="btn-modal" data-dismiss="modal">Fechar</button>
 				</div>
 			</div>
@@ -201,5 +207,6 @@
 		<script src="/scripts/storeEmail.js"></script>
 		<script src="/scripts/addProduct.js"></script>
 		<script src="/scripts/modal.js"></script>
+		<script src="/scripts/form.js"></script>
 	</body>
 </html>

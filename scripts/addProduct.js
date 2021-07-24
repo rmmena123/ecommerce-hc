@@ -23,13 +23,13 @@ const degionGamer = {
 	price: 3500,
 };
 
-/* ---------- FUNCIONALIDADES ---------- */
-
 // Cria um array para armazenamento dos produtos
 const items = (() => {
 	const fieldValue = localStorage.getItem("cart");
 	return fieldValue === null ? [] : JSON.parse(fieldValue);
 })();
+
+/* ---------- FUNCIONALIDADES ---------- */
 
 // Armazena o produto Degion Desktop no array
 const btnDesktop = document.getElementById("btn-desktop");
